@@ -1,7 +1,9 @@
 <header>
+ <div class="container">
  <div class="row">
   <div class="col"><h1>PIXYCAM: Sensor de vision 2D</h1></div>
   <div class="col"><img src="https://pixycam.com/wp-content/uploads/2018/04/Pixy-tracking-coloured-balls.gif" ></div>
+ </div> 
  </div> 
 </header>
 <body>
