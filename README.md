@@ -3,7 +3,7 @@
 </head> 
 <header>
 
- <table style="border: hidden">
+ <table border="0">
   <tr>
     <td style="border: hidden"><h1>PIXYCAM: Sensor de vision 2D</h1></td>
    <td style="border: hidden"><img src="https://pixycam.com/wp-content/uploads/2018/04/Pixy-tracking-coloured-balls.gif" width="400" height="350"></td>
