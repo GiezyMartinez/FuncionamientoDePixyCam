@@ -48,6 +48,8 @@ multiplicador iterativo.
  <li>Dimensions: 2.1” x 2.0“ x 1.4</li>
  <li>Weight: 27 grams</li>
 </ul>
+<br>
+[Especificaciones técnicas](https://docs.pixycam.com/wiki/lib/exe/fetch.php?cache=&w=900&h=626&tok=9c5220&media=wiki:img:pixy_back.jpg)
 
 </body>
 <footer>https://www.mouser.mx/Search/Refine?N=4294013638&Keyword=LPC4330&FS=True&Tb=datasheets</footer>
