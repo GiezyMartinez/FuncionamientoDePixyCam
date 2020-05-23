@@ -5,8 +5,7 @@
 
  <table style="width:100%; border: 0px;">
   <tr>
-    <td><h1>PIXYCAM</h1></td>
-   <td> Sensor de vision 2D</td>
+    <td><h1>PIXYCAM: Sensor de vision 2D</h1></td>
    <td><img src="https://pixycam.com/wp-content/uploads/2018/04/Pixy-tracking-coloured-balls.gif" width="500" height="350"></td>
   </tr>  
  </table>
