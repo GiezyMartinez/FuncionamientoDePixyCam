@@ -2,18 +2,12 @@
 <head>
 </head> 
 <header>
-<table style="width:100%">
-    <table style="width:100%; borde: 0px;">
-  <tr>
-    <th></th>
-    <th></th>
-  </tr>
+
+ <table style="width:100%; border:0;">
   <tr>
     <td><h1>PIXYCAM: Sensor de vision 2D</h1></td>
     <td><img src="https://pixycam.com/wp-content/uploads/2018/04/Pixy-tracking-coloured-balls.gif" ></td>
-  </tr>
-    
-    
+  </tr>   
  </table>
   
   
