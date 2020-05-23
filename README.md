@@ -6,7 +6,7 @@
  <table border="0">
   <tr>
     <td style="border: hidden"><h1>PIXYCAM: Sensor de vision 2D</h1></td>
-   <td style="border: hidden"><img src="https://pixycam.com/wp-content/uploads/2018/04/Pixy-tracking-coloured-balls.gif" width="400" height="350"></td>
+   <td style="border: hidden"><img src="https://cdn-tienda.bricogeek.com/4345-thickbox_default/camara-pixy-cmucam5.jpg" width="400" height="350"></td>
   </tr>  
  </table>
 </header>
