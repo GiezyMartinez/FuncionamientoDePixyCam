@@ -33,5 +33,22 @@ Rendimiento de hasta 204 MHz con un conjunto de instrucciones simple y un tamañ
 LPC43x0, el multiplicador de hardware del coprocesador Cortex-M0 se implementa como un ciclo de 32
 multiplicador iterativo.
 </p>
+<h2>Especificaciones técnicas</h2>
+<ul>
+ <li>Image sensor: Omnivision OV9715, 1/4“, 1280×800</li>
+ <li>Lens field-of-view: 75 degrees horizontal, 47 degrees vertical</li>
+ <li>Lens type: standard M12 (several different types available)</li>
+ <li>Power consumption: 140 mA typical</li>
+ <li>Power consumption: 140 mA typical</li>
+ <li>Power consumption: 140 mA typical</li>
+ <li>Power input: USB input (5V) or unregulated input (6V to 10V)</li>
+ <li>RAM: 264K bytes</li>
+ <li>Flash: 1M bytes</li>
+ <li>Available data outputs: UART serial, SPI, I2C, USB, digital, analog</li>
+ <li>Dimensions: 2.1” x 2.0“ x 1.4</li>
+ <li>Weight: 27 grams</li>
+</ul>
+
 </body>
+<footer>https://www.mouser.mx/Search/Refine?N=4294013638&Keyword=LPC4330&FS=True&Tb=datasheets</footer>
 
