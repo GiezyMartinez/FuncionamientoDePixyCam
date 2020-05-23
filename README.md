@@ -62,6 +62,10 @@ multiplicador iterativo.
 <br>
 <img src="https://github.com/GiezyMartinez/Proyecto-Final-PixyCam/blob/master/imagenes/especificaciones.jpg">
 <br>
+<h2>Firmeware</h2>
+<h2>¿Como se utiliza?</h2>
+<h2>Ejemplo</h2>
+
 </body>
 <footer>https://www.mouser.mx/Search/Refine?N=4294013638&Keyword=LPC4330&FS=True&Tb=datasheets</footer>
 </html>
