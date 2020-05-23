@@ -49,7 +49,7 @@ multiplicador iterativo.
  <li>Weight: 27 grams</li>
 </ul>
 <br>
-![Imagen1](/https://github.com/GiezyMartinez/Proyecto-Final-PixyCam/blob/master/imagenes/especificaciones.jpg)
+<img src="https://github.com/GiezyMartinez/Proyecto-Final-PixyCam/blob/master/imagenes/especificaciones.jpg">
 <br>
 </body>
 <footer>https://www.mouser.mx/Search/Refine?N=4294013638&Keyword=LPC4330&FS=True&Tb=datasheets</footer>
