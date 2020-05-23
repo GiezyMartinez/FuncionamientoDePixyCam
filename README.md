@@ -9,11 +9,10 @@
    <td style="border: hidden"><img src="https://pixycam.com/wp-content/uploads/2018/04/Pixy-tracking-coloured-balls.gif" width="400" height="350"></td>
   </tr>  
  </table>
-  
-  
-
 </header>
 <body>
+ <br>
+ <br>
   <h2>¿Qué es Pixycam?</h2>
   <p>Si desea que su robot realice una tarea como recoger un objeto, perseguir una pelota, ubicar una estación de carga, etc., y desea un solo sensor para ayudar a realizar todas estas tareas, entonces la visión es su sensor. Los sensores de visión (imagen) son útiles porque son muy flexibles. Con el algoritmo correcto, un sensor de imagen puede detectar o detectar prácticamente cualquier cosa. Pero hay dos inconvenientes con los sensores de imagen: 1) producen muchos datos, docenas de megabytes por segundo y 2) procesar esta cantidad de datos puede abrumar a muchos procesadores. Y si el procesador puede mantenerse al día con los datos, gran parte de su potencia de procesamiento no estará disponible para otras tareas.
 
