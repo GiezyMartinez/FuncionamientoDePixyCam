@@ -8,5 +8,30 @@
 Pixy aborda estos problemas combinando un potente procesador dedicado con el sensor de imagen. Pixy procesa imágenes desde el sensor de imagen y solo envía la información útil a su microcontrolador. Y lo hace a velocidad de cuadro (50 Hz). La información está disponible a través de una de varias interfaces: serie UART, SPI, I2C, USB o salida digital / analógica. Por lo tanto, su Arduino u otro microcontrolador puede hablar fácilmente con Pixy y aún tener un montón de CPU disponible para otras tareas.
 
 Es posible conectar múltiples Pixys a su microcontrolador, por ejemplo, un robot con 4 Pixys y 360 grados de detección. O use Pixy sin un microcontrolador y use las salidas digitales o analógicas para activar eventos, interruptores, servos, etc.</p>
+<br>
+<h2>MCU</h2>
+<p>
+Procesador NXP LPC4330, es un microcontrolador basado en ARM Cortex-M4 para embebidos
+aplicaciones que incluyen un coprocesador ARM Cortex-M0, hasta 264 kB de SRAM,
+periféricos configurables avanzados como el temporizador configurable por estado / PWM
+(SCTimer / PWM) y la interfaz Serial General-Purpose I / O (SGPIO), dos de alta velocidad
+Controladores USB, Ethernet, LCD, un controlador de memoria externo y múltiples digitales y
+periféricos analógicos El LPC4350 / 30/20/10 funciona a frecuencias de CPU de hasta 204
+Megahercio.
+ 
+El ARM Cortex-M4 es un núcleo de 32 bits que ofrece mejoras del sistema, como la baja potencia.
+consumo, funciones de depuración mejoradas y un alto nivel de integración de bloques de soporte. los
+La CPU ARM Cortex-M4 incorpora una tubería de 3 etapas, utiliza una arquitectura Harvard con
+instrucción local separada y buses de datos, así como un tercer bus para periféricos, y
+incluye una unidad interna de captación previa que admite ramificación especulativa. El brazo
+Cortex-M4 admite procesamiento de señal digital de ciclo único e instrucciones SIMD. UNA
+El procesador de punto flotante de hardware está integrado en el núcleo.
+
+El coprocesador ARM Cortex-M0 es un núcleo de 32 bits energéticamente eficiente y fácil de usar que
+es compatible con códigos y herramientas con el núcleo Cortex-M4. El coprocesador Cortex-M0 ofrece
+Rendimiento de hasta 204 MHz con un conjunto de instrucciones simple y un tamaño de código reducido. En
+LPC43x0, el multiplicador de hardware del coprocesador Cortex-M0 se implementa como un ciclo de 32
+multiplicador iterativo.
+</p>
 </body>
 
