@@ -1,4 +1,5 @@
 <header>
+ <img src="https://pixycam.com/wp-content/uploads/2018/04/Pixy-tracking-coloured-balls.gif">
  <h1>PIXYCAM: Sensor de vision 2D</h1>
 </header>
 <body>
