@@ -12,8 +12,8 @@
 </header>
 <body>
  <br>
- <h2>PROBLEMÁTICA</h2>
- <h2>JUSTIFICACIÓN</h2>
+ 
+ <h2>INTRODUCCIÓN</h2>
  <h2>DELIMINTACIÓN DEL PROBLEMA</h2>
  <h2>OBJETIVOS</h2>
  <h2>MARCO TEÓRICO</h2>
