@@ -1,3 +1,5 @@
+<!doctype html>
+<html lang="en">
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -5,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
   <header>
- <table border="0" style="backgroup:blue">
+ <table border="0">
   <tr>
     <td style="border: hidden"><h1>PIXYCAM: Sensor de vision 2D</h1></td>
    <td style="border: hidden"><img src="https://cdn-tienda.bricogeek.com/4345-thickbox_default/camara-pixy-cmucam5.jpg" width="400" height="350"></td>
@@ -56,7 +58,7 @@ También cuenta con una interfaz de salida, que es la que se encarga de llevar l
 
 Pixy (CMUcam5) es una asociación entre el Instituto de Robótica Carnegie Mellon y Charmed Labs. Pixy proviene de una larga línea de CMUcams, pero Pixy comenzó realmente como una campaña de Kickstarter . ¡Comenzó a enviarse en marzo de 2014 y desde entonces se ha convertido en el sistema de visión más popular de la historia! Pixy se financia exclusivamente a través de ventas, así que gracias por ayudar a que Pixy sea un. éxito.
 
-<h3><h3>Mcu que utiliza Pixycam.</h3>
+<h3>Mcu que utiliza Pixycam.</h3>
 
 Procesador NXP LPC4330, es un microcontrolador basado en ARM Cortex-M4 para embebidos aplicaciones que incluyen un coprocesador ARM Cortex-M0, hasta 264 kB de SRAM, periféricos configurables avanzados como el temporizador configurable por estado / PWM (SCTimer / PWM) y la interfaz Serial General-Purpose I / O (SGPIO), dos de alta velocidad Controladores USB, Ethernet, LCD, un controlador de memoria externo y múltiples digitales y periféricos analógicos El LPC4350 / 30/20/10 funciona a frecuencias de CPU de hasta 204 Megahercio.
 
@@ -72,7 +74,7 @@ Si desea que su robot realice una tarea como recoger un objeto, perseguir una pe
 
 Pixy aborda estos problemas combinando un potente procesador dedicado con el sensor de imagen. Pixy procesa imágenes desde el sensor de imagen y solo envía la información útil a su microcontrolador. Y lo hace a velocidad de cuadro (50 Hz). La información está disponible a través de una de varias interfaces: serie UART, SPI, I2C, USB o salida digital / analógica. Por lo tanto, su Arduino u otro microcontrolador puede hablar fácilmente con Pixy y aún tener un montón de CPU disponible para otras tareas.
 
-Es posible conectar múltiples Pixys a su microcontrolador, por ejemplo, un robot con 4 Pixys y 360 grados de detección. O use Pixy sin un microcontrolador y use las salidas digitales o analógicas para activar eventos, interruptores, servos, etc.
+Es posible conectar múltiples Pixys a su microcontrolador, por ejemplo, un robot con 4 Pixys y 360 grados de detección. O use Pixy sin un microcontrolador y use las salidas digitales o analógicas para activar eventos, interruptores, servos, etc.</p>
 
 <h3>Especificaciones técnicas</h3>
 <ul>
@@ -94,10 +96,10 @@ Es posible conectar múltiples Pixys a su microcontrolador, por ejemplo, un robo
 
 <h3><h3>Conectar Pixycam con Arduino.</h3>
 
-Fuera de la caja, Pixy está listo para hablar con un Arduino. Envía información de bloque a Arduino a 1 Mbits / segundo, lo que significa que Pixy puede enviar más de 6000 objetos detectados por segundo o 135 objetos detectados por fotograma (Pixy puede procesar 50 fotogramas por segundo).
+<p>Fuera de la caja, Pixy está listo para hablar con un Arduino. Envía información de bloque a Arduino a 1 Mbits / segundo, lo que significa que Pixy puede enviar más de 6000 objetos detectados por segundo o 135 objetos detectados por fotograma (Pixy puede procesar 50 fotogramas por segundo).
 
-OK, para que Pixy y Arduino hablen entre sí, use el cable Arduino suministrado para conectar Pixy a su Arduino.
-<table border="0" style="backgroup:blue">
+OK, para que Pixy y Arduino hablen entre sí, use el cable Arduino suministrado para conectar Pixy a su Arduino.</p>
+<table border="0">
   <tr>
     <td style="border: hidden"><img src="https://docs.pixycam.com/wiki/lib/exe/fetch.php?cache=&w=900&h=599&tok=70d996&media=wiki:img:ce5166e65a245cce097741efef288fe09b08da8a.jpg" width="400" height="350"></td>
    <td style="border: hidden"><img src="https://docs.pixycam.com/wiki/lib/exe/fetch.php?cache=&w=900&h=599&tok=07257a&media=wiki:img:2b73fb3a56aa3673396578f13e2496ef3ea06616.jpg" width="400" height="350"></td>
@@ -111,8 +113,8 @@ A continuación, descargue la última biblioteca de Arduino "arduino_pixy-xyzzip
 
 Usar Pixy con Arduino es realmente simple. Simplemente incluye los encabezados SPI y Pixy:
 <ul>
-<li>#include <SPI.h></li>
-<li>#include <Pixy.h></li>
+<li><p>#include <SPI.h></p></li>
+<li><p>#include <Pixy.h></p></li>
 </ul>
 Y haga una instancia global de Pixy poniendo a este pequeño individuo fuera de sus funciones setup () y loop ():
 <ul><li>Pixy pixy;</li></ul>
