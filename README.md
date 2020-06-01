@@ -9,7 +9,7 @@
   <header>
  <table border="0">
   <tr>
-    <td style="border: hidden"><h1>PIXYCAM: Sensor de vision 2D</h1></td>
+    <td style="border: hidden"><h1>Funcionamiento de Pixycam.</h1> Módulo para Arduino.</td>
    <td style="border: hidden"><img src="https://cdn-tienda.bricogeek.com/4345-thickbox_default/camara-pixy-cmucam5.jpg" width="400" height="350"></td>
   </tr>  
  </table>
@@ -128,7 +128,6 @@ El método más importante en la biblioteca Arduino es getBlocks(), que devuelve
 <li>pixy.blocks[i].angle El ángulo del objeto detectado si el objeto detectado es un código de color.</li>
 <li>pixy.blocks[i].print() Una función miembro que imprime la información del objeto detectado en el puerto serie.</li>
 </ul>
-</p>
 <h2>Conclusión</h2>
 <p>Afortunadamente existen proyectos como Arduino que permiten desarrollar tecnologías o implementarlas como es caso de Pixycam, una herramienta tan interesante por el sin fin de aplicaciones que se podrían dar, y sobre todo por la facilidad accesibilidad de hardware y software. </p>
 <h2>Bibliografía</h2>
