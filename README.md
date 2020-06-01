@@ -19,11 +19,12 @@
  <h2>Delimitación del problema</h2>
   <p>Se desea conocer qué funciones puede cumplir el módulo para el microcontrolador Arduino Pixycam y sus características técnicas. Además es necesario documentar cómo se realizan las conexiones físicas entre la cámara Pixycam y el microcontrolador. Y por último, se requiere analizar el código que se implementa para hacer uso de los recursos de dicho módulo.</p>
  <h2>Objetivos</h2>
-  <p>General.
+  <p>
+<h3>General.</h3>
 
 Comprender el correcto funcionamiento e implementación de la cámara Pixycam para poder implementarlo en proyectos futuros. 
 
-Específicos.
+<h3>Específicos.</h3>
 <ul>
   <li>Conocer los alcances y limitaciones de dicho módulo.</li>
   <li>Conocer las características técnicas que tiene Pixycam.</li>
@@ -32,7 +33,8 @@ Específicos.
  </ul> 
 </p>
  <h2>Marco teórico</h2>
-  <p>Arduino.
+  <p>
+<h3>Arduino.</h3>
 
 Arduino es una plataforma de creación de electrónica de código abierto, la cual está basada en hardware y software libre, flexible y fácil de utilizar para los creadores y desarrolladores. Esta plataforma permite crear diferentes tipos de microordenadores de una sola placa a los que la comunidad de creadores puede darles diferentes tipos de uso.
 
@@ -50,11 +52,11 @@ El tipo de periféricos que puedas utilizar para enviar datos al microcontrolado
 
 También cuenta con una interfaz de salida, que es la que se encarga de llevar la información que se ha procesado en el Arduino a otros periféricos. Estos periféricos pueden ser pantallas o altavoces en los que reproducir los datos procesados, pero también pueden ser otras placas o controladores.
 
-Pixy.
+<h3>Pixy.</h3>
 
 Pixy (CMUcam5) es una asociación entre el Instituto de Robótica Carnegie Mellon y Charmed Labs. Pixy proviene de una larga línea de CMUcams, pero Pixy comenzó realmente como una campaña de Kickstarter . ¡Comenzó a enviarse en marzo de 2014 y desde entonces se ha convertido en el sistema de visión más popular de la historia! Pixy se financia exclusivamente a través de ventas, así que gracias por ayudar a que Pixy sea un. éxito.
 
-Mcu que utiliza Pixycam.
+<h3><h3>Mcu que utiliza Pixycam.</h3>
 
 Procesador NXP LPC4330, es un microcontrolador basado en ARM Cortex-M4 para embebidos aplicaciones que incluyen un coprocesador ARM Cortex-M0, hasta 264 kB de SRAM, periféricos configurables avanzados como el temporizador configurable por estado / PWM (SCTimer / PWM) y la interfaz Serial General-Purpose I / O (SGPIO), dos de alta velocidad Controladores USB, Ethernet, LCD, un controlador de memoria externo y múltiples digitales y periféricos analógicos El LPC4350 / 30/20/10 funciona a frecuencias de CPU de hasta 204 Megahercio.
 
@@ -64,7 +66,7 @@ El procesador ARM Cortex-M0 es un núcleo de 32 bits energéticamente eficiente 
 </p>
 <h3>Análisis</h3>
 <p>
-¿Qué funciones realiza Pixycam?
+<h3><h3>¿Qué funciones realiza Pixycam?</h3>
 
 Si desea que su robot realice una tarea como recoger un objeto, perseguir una pelota, ubicar una estación de carga, etc., y desea un sólo sensor para ayudar a realizar todas estas tareas, entonces la visión es su sensor. Los sensores de visión (imagen) son útiles porque son muy flexibles. Con el algoritmo correcto, un sensor de imagen puede detectar o detectar prácticamente cualquier cosa. Pero hay dos inconvenientes con los sensores de imagen: 1) producen muchos datos, docenas de megabytes por segundo y 2) procesar esta cantidad de datos puede abrumar a muchos procesadores. Y si el procesador puede mantenerse al día con los datos, gran parte de su potencia de procesamiento no estará disponible para otras tareas.
 
@@ -72,7 +74,7 @@ Pixy aborda estos problemas combinando un potente procesador dedicado con el sen
 
 Es posible conectar múltiples Pixys a su microcontrolador, por ejemplo, un robot con 4 Pixys y 360 grados de detección. O use Pixy sin un microcontrolador y use las salidas digitales o analógicas para activar eventos, interruptores, servos, etc.
 
-Especificaciones técnicas
+<h3>Especificaciones técnicas</h3>
 <ul>
  <li>Image sensor: Omnivision OV9715, 1/4“, 1280×800</li>
  <li>Lens field-of-view: 75 degrees horizontal, 47 degrees vertical</li>
@@ -90,7 +92,7 @@ Especificaciones técnicas
 
 <img src="https://github.com/GiezyMartinez/Proyecto-Final-PixyCam/blob/master/imagenes/especificaciones.jpg">
 
-Conectar Pixycam con Arduino.
+<h3><h3>Conectar Pixycam con Arduino.</h3>
 
 Fuera de la caja, Pixy está listo para hablar con un Arduino. Envía información de bloque a Arduino a 1 Mbits / segundo, lo que significa que Pixy puede enviar más de 6000 objetos detectados por segundo o 135 objetos detectados por fotograma (Pixy puede procesar 50 fotogramas por segundo).
 
@@ -105,7 +107,7 @@ OK, para que Pixy y Arduino hablen entre sí, use el cable Arduino suministrado 
 A continuación, descargue la última biblioteca de Arduino "arduino_pixy-xyzzip". Abra el IDE de Arduino e importe la biblioteca Pixy seleccionando Sketch➜Include Library➜Add .ZIP Library ... (o si está utilizando una versión anterior Sketch➜Import Library ) en el Arduino IDE, y luego navegando al archivo zip de Arduino que acabas de descargar.
 <img src="https://i.stack.imgur.com/TUjG3.png">
 
-Código fuente en IDE arduino
+<h3>Código fuente en IDE arduino</h3>
 
 Usar Pixy con Arduino es realmente simple. Simplemente incluye los encabezados SPI y Pixy:
 <ul>
