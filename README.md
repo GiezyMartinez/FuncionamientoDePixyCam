@@ -64,7 +64,7 @@ El ARM Cortex-M4 es un núcleo de 32 bits que ofrece mejoras del sistema, como l
 
 El procesador ARM Cortex-M0 es un núcleo de 32 bits energéticamente eficiente y fácil de usar que es compatible con códigos y herramientas con el núcleo Cortex-M4. El coprocesador Cortex-M0 ofrece Rendimiento de hasta 204 MHz con un conjunto de instrucciones simple y un tamaño de código reducido. En LPC43x0, el multiplicador de hardware del procesador Cortex-M0 se implementa como un ciclo de 32 multiplicador iterativo.
 </p>
-<h3>Análisis</h3>
+<h2>Análisis</h2>
 <p>
 <h3><h3>¿Qué funciones realiza Pixycam?</h3>
 
