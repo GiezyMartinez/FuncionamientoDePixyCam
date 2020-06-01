@@ -113,7 +113,7 @@ Usar Pixy con Arduino es realmente simple. Simplemente incluye los encabezados S
 <li>#include <Pixy.h></li>
 </ul>
 Y haga una instancia global de Pixy poniendo a este pequeño individuo fuera de sus funciones setup () y loop ():
-Pixy pixy;
+<ul><li>Pixy pixy;</li></ul>
 El método más importante en la biblioteca Arduino es getBlocks(), que devuelve el número de objetos que Pixy ha detectado. Luego puede buscar en la pixy.blocks[]matriz información sobre cada objeto detectado (un miembro de la matriz para cada objeto detectado). Cada miembro de la matriz ( i) contiene los siguientes campos:
 <ul>
 <li>pixy.blocks[i].signature El número de firma del objeto detectado (1-7 para firmas normales)</li>
@@ -135,6 +135,6 @@ El método más importante en la biblioteca Arduino es getBlocks(), que devuelve
 <li>(2018).Hooking up Pixy to a Microcontroller (like an Arduino)[online]. Recuperado de:https://docs.pixycam.com/wiki/doku.php?id=wiki:v1:hooking_up_pixy_to_a_microcontroller_-28like_an_arduino-29</li>
 </ul>
 </body>
-<footer>https://www.mouser.mx/Search/Refine?N=4294013638&Keyword=LPC4330&FS=True&Tb=datasheets</footer>
+<footer></footer>
 </html>
 
