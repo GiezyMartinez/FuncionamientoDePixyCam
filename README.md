@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -25,11 +24,12 @@
 Comprender el correcto funcionamiento e implementación de la cámara Pixycam para poder implementarlo en proyectos futuros. 
 
 Específicos.
-
-    -Conocer los alcances y limitaciones de dicho módulo.
-    -Conocer las características técnicas que tiene Pixycam.
-    -Comprender el proceso para conectar físicamente el módulo con el microcontrolador.
-    -Analizar el código fuente que permite la interacción de Pixycam y Arduino.
+<ul>
+  <li>Conocer los alcances y limitaciones de dicho módulo.</li>
+  <li>Conocer las características técnicas que tiene Pixycam.</li>
+  <li>Comprender el proceso para conectar físicamente el módulo con el microcontrolador.</li>
+  <li>Analizar el código fuente que permite la interacción de Pixycam y Arduino.</li>
+ </ul> 
 </p>
  <h2>Marco teórico</h2>
   <p>Arduino.
