@@ -4,10 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
-  <header>
- <div class="row">
+<header> 
    <div class="col"><h1>Funcionamiento de Pixycam.</h1> Módulo para Arduino.</div>
- <div class="col"><img src="https://cdn-tienda.bricogeek.com/4345-thickbox_default/camara-pixy-cmucam5.jpg" width="400" height="350"></div>
+ <div class="col"><img src="https://cdn-tienda.bricogeek.com/4345-thickbox_default/camara-pixy-cmucam5.jpg" width="400" height="350">
   </div>
 </header>
 <body>
