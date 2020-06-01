@@ -1,17 +1,13 @@
-<!doctype html>
-<html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  </head>
+</head>
   <header>
- <table border="0">
-  <tr>
-    <td style="border: hidden"><h1>Funcionamiento de Pixycam.</h1> Módulo para Arduino.</td>
-   <td style="border: hidden"><img src="https://cdn-tienda.bricogeek.com/4345-thickbox_default/camara-pixy-cmucam5.jpg" width="400" height="350"></td>
-  </tr>  
- </table>
+ <div class="row">
+   <div class="col"><h1>Funcionamiento de Pixycam.</h1> Módulo para Arduino.</div>
+ <div class="col"><img src="https://cdn-tienda.bricogeek.com/4345-thickbox_default/camara-pixy-cmucam5.jpg" width="400" height="350"></div>
+  </div>
 </header>
 <body>
  <br>
@@ -136,7 +132,3 @@ El método más importante en la biblioteca Arduino es getBlocks(), que devuelve
 <li>(2018).How Pixy got started[online]. Recuperado de:https://docs.pixycam.com/wiki/doku.php?id=wiki:v1:overview.</li>
 <li>(2018).Hooking up Pixy to a Microcontroller (like an Arduino)[online]. Recuperado de:https://docs.pixycam.com/wiki/doku.php?id=wiki:v1:hooking_up_pixy_to_a_microcontroller_-28like_an_arduino-29</li>
 </ul>
-</body>
-<footer></footer>
-</html>
-
