@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
   <header>
- <table border="0">
+ <table border="0" style="backgroup:blue">
   <tr>
     <td style="border: hidden"><h1>PIXYCAM: Sensor de vision 2D</h1></td>
    <td style="border: hidden"><img src="https://cdn-tienda.bricogeek.com/4345-thickbox_default/camara-pixy-cmucam5.jpg" width="400" height="350"></td>
