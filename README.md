@@ -120,6 +120,8 @@ Especificaciones técnicas
  <li>Weight: 27 grams</li>
 </ul>
 
+<img src="https://github.com/GiezyMartinez/Proyecto-Final-PixyCam/blob/master/imagenes/especificaciones.jpg">
+
 Conectar Pixycam con Arduino.
 
 Fuera de la caja, Pixy está listo para hablar con un Arduino. Envía información de bloque a Arduino a 1 Mbits / segundo, lo que significa que Pixy puede enviar más de 6000 objetos detectados por segundo o 135 objetos detectados por fotograma (Pixy puede procesar 50 fotogramas por segundo).
@@ -134,7 +136,7 @@ OK, para que Pixy y Arduino hablen entre sí, use el cable Arduino suministrado 
 
 </p>
 <br>
-<img src="https://github.com/GiezyMartinez/Proyecto-Final-PixyCam/blob/master/imagenes/especificaciones.jpg">
+
   </body>
 <footer>https://www.mouser.mx/Search/Refine?N=4294013638&Keyword=LPC4330&FS=True&Tb=datasheets</footer>
 </html>
