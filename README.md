@@ -62,38 +62,6 @@ El ARM Cortex-M4 es un núcleo de 32 bits que ofrece mejoras del sistema, como l
 
 El procesador ARM Cortex-M0 es un núcleo de 32 bits energéticamente eficiente y fácil de usar que es compatible con códigos y herramientas con el núcleo Cortex-M4. El coprocesador Cortex-M0 ofrece Rendimiento de hasta 204 MHz con un conjunto de instrucciones simple y un tamaño de código reducido. En LPC43x0, el multiplicador de hardware del procesador Cortex-M0 se implementa como un ciclo de 32 multiplicador iterativo.
 </p>
- <br>
-  <h3>¿Qué es Pixycam?</h3>
-  <p>Si desea que su robot realice una tarea como recoger un objeto, perseguir una pelota, ubicar una estación de carga, etc., y desea un solo sensor para ayudar a realizar todas estas tareas, entonces la visión es su sensor. Los sensores de visión (imagen) son útiles porque son muy flexibles. Con el algoritmo correcto, un sensor de imagen puede detectar o detectar prácticamente cualquier cosa. Pero hay dos inconvenientes con los sensores de imagen: 1) producen muchos datos, docenas de megabytes por segundo y 2) procesar esta cantidad de datos puede abrumar a muchos procesadores. Y si el procesador puede mantenerse al día con los datos, gran parte de su potencia de procesamiento no estará disponible para otras tareas.
-
-Pixy aborda estos problemas combinando un potente procesador dedicado con el sensor de imagen. Pixy procesa imágenes desde el sensor de imagen y solo envía la información útil a su microcontrolador. Y lo hace a velocidad de cuadro (50 Hz). La información está disponible a través de una de varias interfaces: serie UART, SPI, I2C, USB o salida digital / analógica. Por lo tanto, su Arduino u otro microcontrolador puede hablar fácilmente con Pixy y aún tener un montón de CPU disponible para otras tareas.
-
-Es posible conectar múltiples Pixys a su microcontrolador, por ejemplo, un robot con 4 Pixys y 360 grados de detección. O use Pixy sin un microcontrolador y use las salidas digitales o analógicas para activar eventos, interruptores, servos, etc.</p>
-<br>
-<h3>MCU</h3>
-<p>
-Procesador NXP LPC4330, es un microcontrolador basado en ARM Cortex-M4 para embebidos
-aplicaciones que incluyen un coprocesador ARM Cortex-M0, hasta 264 kB de SRAM,
-periféricos configurables avanzados como el temporizador configurable por estado / PWM
-(SCTimer / PWM) y la interfaz Serial General-Purpose I / O (SGPIO), dos de alta velocidad
-Controladores USB, Ethernet, LCD, un controlador de memoria externo y múltiples digitales y
-periféricos analógicos El LPC4350 / 30/20/10 funciona a frecuencias de CPU de hasta 204
-Megahercio.
- 
-El ARM Cortex-M4 es un núcleo de 32 bits que ofrece mejoras del sistema, como la baja potencia.
-consumo, funciones de depuración mejoradas y un alto nivel de integración de bloques de soporte. los
-La CPU ARM Cortex-M4 incorpora una tubería de 3 etapas, utiliza una arquitectura Harvard con
-instrucción local separada y buses de datos, así como un tercer bus para periféricos, y
-incluye una unidad interna de captación previa que admite ramificación especulativa. El brazo
-Cortex-M4 admite procesamiento de señal digital de ciclo único e instrucciones SIMD. UNA
-El procesador de punto flotante de hardware está integrado en el núcleo.
-
-El coprocesador ARM Cortex-M0 es un núcleo de 32 bits energéticamente eficiente y fácil de usar que
-es compatible con códigos y herramientas con el núcleo Cortex-M4. El coprocesador Cortex-M0 ofrece
-Rendimiento de hasta 204 MHz con un conjunto de instrucciones simple y un tamaño de código reducido. En
-LPC43x0, el multiplicador de hardware del coprocesador Cortex-M0 se implementa como un ciclo de 32
-multiplicador iterativo.
-</p>
 <h3>Análisis</h3>
 <p>
 ¿Qué funciones realiza Pixycam?
@@ -133,9 +101,34 @@ OK, para que Pixy y Arduino hablen entre sí, use el cable Arduino suministrado 
    <td style="border: hidden"><img src="https://docs.pixycam.com/wiki/lib/exe/fetch.php?cache=&w=900&h=599&tok=07257a&media=wiki:img:2b73fb3a56aa3673396578f13e2496ef3ea06616.jpg" width="400" height="350"></td>
   </tr>  
  </table>
+ 
+A continuación, descargue la última biblioteca de Arduino "arduino_pixy-xyzzip". Abra el IDE de Arduino e importe la biblioteca Pixy seleccionando Sketch➜Include Library➜Add .ZIP Library ... (o si está utilizando una versión anterior Sketch➜Import Library ) en el Arduino IDE, y luego navegando al archivo zip de Arduino que acabas de descargar.
+<img src="https://i.stack.imgur.com/TUjG3.png">
 
+Código fuente en IDE arduino
+
+Usar Pixy con Arduino es realmente simple. Simplemente incluye los encabezados SPI y Pixy:
+#include <SPI.h>
+#include <Pixy.h>
+Y haga una instancia global de Pixy poniendo a este pequeño individuo fuera de sus funciones setup () y loop ():
+Pixy pixy;
+El método más importante en la biblioteca Arduino es getBlocks(), que devuelve el número de objetos que Pixy ha detectado. Luego puede buscar en la pixy.blocks[]matriz información sobre cada objeto detectado (un miembro de la matriz para cada objeto detectado). Cada miembro de la matriz ( i) contiene los siguientes campos:
+-pixy.blocks[i].signature El número de firma del objeto detectado (1-7 para firmas normales)
+-pixy.blocks[i].x La ubicación x del centro del objeto detectado (0 a 319)
+-pixy.blocks[i].y La ubicación y del centro del objeto detectado (0 a 199)
+-pixy.blocks[i].width El ancho del objeto detectado (1 a 320)
+-pixy.blocks[i].height La altura del objeto detectado (1 a 200)
+-pixy.blocks[i].angle El ángulo del objeto detectado si el objeto detectado es un código de color .
+-pixy.blocks[i].print() Una función miembro que imprime la información del objeto detectado en el puerto serie.
 </p>
-<br>
+<h2>Conclusión</h2>
+<p>Afortunadamente existen proyectos como Arduino que permiten desarrollar tecnologías o implementarlas como es caso de Pixycam, una herramienta tan interesante por el sin fin de aplicaciones que se podrían dar, y sobre todo por la facilidad accesibilidad de hardware y software. </p>
+<h2>Bibliografía</h2>
+<p>(2019). LPC4350/30/20/10[online]. Recuperado de: ]https://www.mouser.mx/Search/Refine?N=4294013638&Keyword=LPC4330&FS=True&Tb=datasheets
+Yubas F. (2018).Qué es Arduino, cómo funciona y qué puedes hacer con uno[online]. Recuperado de: https://www.xataka.com/basics/que-arduino-como-funciona-que-puedes-hacer-uno
+(2018).How Pixy got started[online]. Recuperado de:https://docs.pixycam.com/wiki/doku.php?id=wiki:v1:overview.
+(2018).Hooking up Pixy to a Microcontroller (like an Arduino)[online]. Recuperado de:https://docs.pixycam.com/wiki/doku.php?id=wiki:v1:hooking_up_pixy_to_a_microcontroller_-28like_an_arduino-29
+</p>
 
   </body>
 <footer>https://www.mouser.mx/Search/Refine?N=4294013638&Keyword=LPC4330&FS=True&Tb=datasheets</footer>
