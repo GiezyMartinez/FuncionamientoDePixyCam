@@ -94,7 +94,17 @@ Rendimiento de hasta 204 MHz con un conjunto de instrucciones simple y un tamañ
 LPC43x0, el multiplicador de hardware del coprocesador Cortex-M0 se implementa como un ciclo de 32
 multiplicador iterativo.
 </p>
-<h3>Especificaciones técnicas</h3>
+<h3>Análisis</h3>
+<p>
+¿Qué funciones realiza Pixycam?
+
+Si desea que su robot realice una tarea como recoger un objeto, perseguir una pelota, ubicar una estación de carga, etc., y desea un sólo sensor para ayudar a realizar todas estas tareas, entonces la visión es su sensor. Los sensores de visión (imagen) son útiles porque son muy flexibles. Con el algoritmo correcto, un sensor de imagen puede detectar o detectar prácticamente cualquier cosa. Pero hay dos inconvenientes con los sensores de imagen: 1) producen muchos datos, docenas de megabytes por segundo y 2) procesar esta cantidad de datos puede abrumar a muchos procesadores. Y si el procesador puede mantenerse al día con los datos, gran parte de su potencia de procesamiento no estará disponible para otras tareas.
+
+Pixy aborda estos problemas combinando un potente procesador dedicado con el sensor de imagen. Pixy procesa imágenes desde el sensor de imagen y solo envía la información útil a su microcontrolador. Y lo hace a velocidad de cuadro (50 Hz). La información está disponible a través de una de varias interfaces: serie UART, SPI, I2C, USB o salida digital / analógica. Por lo tanto, su Arduino u otro microcontrolador puede hablar fácilmente con Pixy y aún tener un montón de CPU disponible para otras tareas.
+
+Es posible conectar múltiples Pixys a su microcontrolador, por ejemplo, un robot con 4 Pixys y 360 grados de detección. O use Pixy sin un microcontrolador y use las salidas digitales o analógicas para activar eventos, interruptores, servos, etc.
+
+Especificaciones técnicas
 <ul>
  <li>Image sensor: Omnivision OV9715, 1/4“, 1280×800</li>
  <li>Lens field-of-view: 75 degrees horizontal, 47 degrees vertical</li>
@@ -109,6 +119,20 @@ multiplicador iterativo.
  <li>Dimensions: 2.1” x 2.0“ x 1.4</li>
  <li>Weight: 27 grams</li>
 </ul>
+
+Conectar Pixycam con Arduino.
+
+Fuera de la caja, Pixy está listo para hablar con un Arduino. Envía información de bloque a Arduino a 1 Mbits / segundo, lo que significa que Pixy puede enviar más de 6000 objetos detectados por segundo o 135 objetos detectados por fotograma (Pixy puede procesar 50 fotogramas por segundo).
+
+OK, para que Pixy y Arduino hablen entre sí, use el cable Arduino suministrado para conectar Pixy a su Arduino.
+<table border="0" style="backgroup:blue">
+  <tr>
+    <td style="border: hidden"><img src="https://docs.pixycam.com/wiki/lib/exe/fetch.php?cache=&w=900&h=599&tok=70d996&media=wiki:img:ce5166e65a245cce097741efef288fe09b08da8a.jpg" width="400" height="350"></td>
+   <td style="border: hidden"><img src="https://docs.pixycam.com/wiki/lib/exe/fetch.php?cache=&w=900&h=599&tok=07257a&media=wiki:img:2b73fb3a56aa3673396578f13e2496ef3ea06616.jpg" width="400" height="350"></td>
+  </tr>  
+ </table>
+
+</p>
 <br>
 <img src="https://github.com/GiezyMartinez/Proyecto-Final-PixyCam/blob/master/imagenes/especificaciones.jpg">
   </body>
