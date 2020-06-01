@@ -1,3 +1,4 @@
+<html lang="en">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -87,7 +88,7 @@ Es posible conectar múltiples Pixys a su microcontrolador, por ejemplo, un robo
  <li>Weight: 27 grams</li>
 </ul>
 
-<img src="https://github.com/GiezyMartinez/Proyecto-Final-PixyCam/blob/master/imagenes/especificaciones.jpg">
+<img src="https://docs.pixycam.com/wiki/lib/exe/fetch.php?cache=&w=900&h=626&tok=9c5220&media=wiki:img:pixy_back.jpg">
 
 <h3><h3>Conectar Pixycam con Arduino.</h3>
 
@@ -132,3 +133,5 @@ El método más importante en la biblioteca Arduino es getBlocks(), que devuelve
 <li>(2018).How Pixy got started[online]. Recuperado de:https://docs.pixycam.com/wiki/doku.php?id=wiki:v1:overview.</li>
 <li>(2018).Hooking up Pixy to a Microcontroller (like an Arduino)[online]. Recuperado de:https://docs.pixycam.com/wiki/doku.php?id=wiki:v1:hooking_up_pixy_to_a_microcontroller_-28like_an_arduino-29</li>
 </ul>
+</body>
+</html>
