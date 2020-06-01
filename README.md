@@ -108,29 +108,33 @@ A continuación, descargue la última biblioteca de Arduino "arduino_pixy-xyzzip
 Código fuente en IDE arduino
 
 Usar Pixy con Arduino es realmente simple. Simplemente incluye los encabezados SPI y Pixy:
-#include <SPI.h>
-#include <Pixy.h>
+<ul>
+<li>#include <SPI.h></li>
+<li>#include <Pixy.h></li>
+</ul>
 Y haga una instancia global de Pixy poniendo a este pequeño individuo fuera de sus funciones setup () y loop ():
 Pixy pixy;
 El método más importante en la biblioteca Arduino es getBlocks(), que devuelve el número de objetos que Pixy ha detectado. Luego puede buscar en la pixy.blocks[]matriz información sobre cada objeto detectado (un miembro de la matriz para cada objeto detectado). Cada miembro de la matriz ( i) contiene los siguientes campos:
--pixy.blocks[i].signature El número de firma del objeto detectado (1-7 para firmas normales)
--pixy.blocks[i].x La ubicación x del centro del objeto detectado (0 a 319)
--pixy.blocks[i].y La ubicación y del centro del objeto detectado (0 a 199)
--pixy.blocks[i].width El ancho del objeto detectado (1 a 320)
--pixy.blocks[i].height La altura del objeto detectado (1 a 200)
--pixy.blocks[i].angle El ángulo del objeto detectado si el objeto detectado es un código de color .
--pixy.blocks[i].print() Una función miembro que imprime la información del objeto detectado en el puerto serie.
+<ul>
+<li>pixy.blocks[i].signature El número de firma del objeto detectado (1-7 para firmas normales)</li>
+<li>pixy.blocks[i].x La ubicación x del centro del objeto detectado (0 a 319)</li>
+<li>pixy.blocks[i].y La ubicación y del centro del objeto detectado (0 a 199)</li>
+<li>pixy.blocks[i].width El ancho del objeto detectado (1 a 320)</li>
+<li>pixy.blocks[i].height La altura del objeto detectado (1 a 200)</li>
+<li>pixy.blocks[i].angle El ángulo del objeto detectado si el objeto detectado es un código de color.</li>
+<li>pixy.blocks[i].print() Una función miembro que imprime la información del objeto detectado en el puerto serie.</li>
+</ul>
 </p>
 <h2>Conclusión</h2>
 <p>Afortunadamente existen proyectos como Arduino que permiten desarrollar tecnologías o implementarlas como es caso de Pixycam, una herramienta tan interesante por el sin fin de aplicaciones que se podrían dar, y sobre todo por la facilidad accesibilidad de hardware y software. </p>
 <h2>Bibliografía</h2>
-<p>(2019). LPC4350/30/20/10[online]. Recuperado de: ]https://www.mouser.mx/Search/Refine?N=4294013638&Keyword=LPC4330&FS=True&Tb=datasheets
-Yubas F. (2018).Qué es Arduino, cómo funciona y qué puedes hacer con uno[online]. Recuperado de: https://www.xataka.com/basics/que-arduino-como-funciona-que-puedes-hacer-uno
-(2018).How Pixy got started[online]. Recuperado de:https://docs.pixycam.com/wiki/doku.php?id=wiki:v1:overview.
-(2018).Hooking up Pixy to a Microcontroller (like an Arduino)[online]. Recuperado de:https://docs.pixycam.com/wiki/doku.php?id=wiki:v1:hooking_up_pixy_to_a_microcontroller_-28like_an_arduino-29
-</p>
-
-  </body>
+<ul>
+<li>(2019). LPC4350/30/20/10[online]. Recuperado de: ]https://www.mouser.mx/Search/Refine?N=4294013638&Keyword=LPC4330&FS=True&Tb=datasheets</li>
+<li>Yubas F. (2018).Qué es Arduino, cómo funciona y qué puedes hacer con uno[online]. Recuperado de: https://www.xataka.com/basics/que-arduino-como-funciona-que-puedes-hacer-uno</li>
+<li>(2018).How Pixy got started[online]. Recuperado de:https://docs.pixycam.com/wiki/doku.php?id=wiki:v1:overview.</li>
+<li>(2018).Hooking up Pixy to a Microcontroller (like an Arduino)[online]. Recuperado de:https://docs.pixycam.com/wiki/doku.php?id=wiki:v1:hooking_up_pixy_to_a_microcontroller_-28like_an_arduino-29</li>
+</ul>
+</body>
 <footer>https://www.mouser.mx/Search/Refine?N=4294013638&Keyword=LPC4330&FS=True&Tb=datasheets</footer>
 </html>
 
